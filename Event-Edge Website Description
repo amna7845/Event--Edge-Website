@@ -1,0 +1,438 @@
+# 🎫 EventEdge — Event Management & Booking Website
+
+EventEdge is a modern, responsive **Event Management and Booking Website** built using **HTML, CSS, and JavaScript**. It allows users to discover upcoming events, explore event categories, save favorite events, register for events, and create their own events.
+
+The website provides an attractive interface with responsive layouts, dark/light mode, interactive forms, event filtering, favorites, and browser-based data storage.
+
+---
+
+## 🌟 Features
+
+### 🏠 Home Page
+
+* Attractive hero section
+* Featured events
+* Popular event categories
+* Event discovery section
+* Responsive navigation
+* Call-to-action buttons
+
+### 🎟️ Events
+
+* Browse available events
+* Event cards with:
+
+  * Event title
+  * Category
+  * Date and time
+  * Location
+  * Ticket price
+  * Event image
+* Search and filtering functionality
+* Event details access
+
+### 📋 Event Details
+
+* Detailed event information
+* Event description
+* Organizer information
+* Date and time
+* Location
+* Ticket pricing
+* Favorite event option
+* Registration button
+
+### ❤️ Favorites
+
+* Save events to favorites
+* Remove events from favorites
+* Clear all favorites
+* Favorites are stored using **Local Storage**
+* Favorite counter displayed in navigation
+
+### 🎫 Event Registration
+
+Users can register for events by providing:
+
+* Full name
+* Email address
+* Phone number
+* Number of tickets
+* Payment method
+* Discount code
+* Special requests
+* Terms and conditions confirmation
+
+The system calculates the total ticket cost and generates a confirmation ID after successful registration.
+
+### ➕ Create an Event
+
+Event organizers can create new events by entering:
+
+* Event title
+* Category
+* Organizer name
+* Date
+* Time
+* Location
+* Ticket price
+* Capacity
+* Cover image keyword
+* Event description
+
+Created events are saved locally and displayed on the website.
+
+### 🔐 Login
+
+* User login interface
+* Basic authentication functionality
+* Login information handled through browser storage
+
+### 🌓 Dark / Light Mode
+
+* Toggle between dark and light themes
+* Theme preference is stored locally
+* Modern dark theme with gold and rose accent colors
+
+### 📱 Responsive Design
+
+The website is designed to work across:
+
+* Desktop computers
+* Laptops
+* Tablets
+* Mobile phones
+
+It includes a responsive hamburger menu for smaller screens.
+
+### 📞 Contact Page
+
+* Contact information
+* Contact form
+* Form validation
+* User-friendly layout
+
+### ℹ️ About Page
+
+* Information about EventEdge
+* Platform introduction
+* Event discovery and hosting information
+
+---
+
+## 📄 Website Pages
+
+The project contains the following pages:
+
+| Page               | File                      |
+| ------------------ | ------------------------- |
+| Home               | `index.html`              |
+| Events             | `events.html`             |
+| Event Details      | `event-details.html`      |
+| Event Registration | `event-registration.html` |
+| Categories         | `categories.html`         |
+| Favorites          | `favorites.html`          |
+| Create Event       | `create-event.html`       |
+| Login              | `login.html`              |
+| About              | `about.html`              |
+| Contact            | `contact.html`            |
+
+---
+
+## 🗂️ Project Structure
+
+```text
+EventEdge/
+│
+├── index.html
+├── events.html
+├── event-details.html
+├── event-registration.html
+├── categories.html
+├── favorites.html
+├── create-event.html
+├── login.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+└── js/
+    ├── auth.js
+    ├── categories.js
+    ├── contact.js
+    ├── create-event.js
+    ├── data.js
+    ├── details.js
+    ├── events.js
+    ├── favorites.js
+    ├── home.js
+    ├── main.js
+    └── register.js
+```
+
+---
+
+## 🛠️ Technologies Used
+
+### HTML5
+
+Used to create the structure and content of all website pages.
+
+### CSS3
+
+Used for:
+
+* Responsive layouts
+* Navigation
+* Cards
+* Forms
+* Buttons
+* Animations
+* Dark/light themes
+* Responsive design
+
+### JavaScript
+
+Used to implement:
+
+* Event search
+* Event filtering
+* Favorites
+* Event registration
+* Form validation
+* Login functionality
+* Theme switching
+* Event creation
+* Dynamic event rendering
+* Local Storage
+
+### Local Storage
+
+Browser Local Storage is used to save:
+
+* Favorite events
+* User registrations
+* Created events
+* Authentication information
+* Theme preferences
+
+---
+
+## 🎨 Design
+
+EventEdge uses a modern event-management visual style featuring:
+
+* Dark premium background
+* Gold accent color
+* Rose/pink accent color
+* Rounded cards
+* Glass-like navigation
+* Modern buttons
+* Responsive event grids
+* Smooth hover effects
+* Clean typography
+* Interactive UI elements
+
+The primary theme is designed to give the website a **premium and elegant event-booking feel**.
+
+---
+
+## ⚙️ How to Run the Project
+
+No server or database is required.
+
+### Method 1 — Open Directly
+
+1. Download or clone the project.
+2. Extract the ZIP file.
+3. Open the `eventedge` folder.
+4. Double-click:
+
+```text
+index.html
+```
+
+5. The website will open in your browser.
+
+### Method 2 — Using VS Code
+
+1. Open the project folder in **Visual Studio Code**.
+2. Install the **Live Server** extension.
+3. Right-click `index.html`.
+4. Select **Open with Live Server**.
+5. The website will open in your browser.
+
+---
+
+## 💾 Data Storage
+
+EventEdge currently uses **browser Local Storage** instead of a backend database.
+
+This allows the website to remember information even after refreshing the page.
+
+Stored information can include:
+
+```text
+Favorites
+Registrations
+Created Events
+Login Information
+Theme Preference
+```
+
+> Since Local Storage is browser-based, the data is specific to the browser/device being used.
+
+---
+
+## 🔍 Main JavaScript Modules
+
+### `data.js`
+
+Contains the event data used throughout the website.
+
+### `main.js`
+
+Handles common website functionality such as:
+
+* Navigation
+* Theme switching
+* Responsive menu
+* Favorite badge
+* Scroll-to-top functionality
+
+### `events.js`
+
+Handles:
+
+* Event display
+* Searching
+* Filtering
+* Sorting/interactions related to events
+
+### `details.js`
+
+Handles individual event details and event information.
+
+### `favorites.js`
+
+Handles:
+
+* Adding favorites
+* Removing favorites
+* Displaying saved events
+* Managing favorite Local Storage data
+
+### `register.js`
+
+Handles:
+
+* Registration form
+* Form validation
+* Ticket quantity
+* Total price calculation
+* Registration confirmation
+
+### `create-event.js`
+
+Handles:
+
+* Create event form
+* Validation
+* New event creation
+* Local Storage
+
+### `categories.js`
+
+Handles event categories and category-based browsing.
+
+### `auth.js`
+
+Handles basic login/authentication functionality.
+
+### `contact.js`
+
+Handles contact form functionality and validation.
+
+### `home.js`
+
+Handles dynamic content and interactions on the homepage.
+
+---
+
+## 📱 Responsive Features
+
+The website adapts to different screen sizes using CSS media queries.
+
+Responsive features include:
+
+* Mobile navigation menu
+* Flexible event grids
+* Responsive forms
+* Responsive cards
+* Mobile-friendly buttons
+* Flexible sections
+* Tablet and desktop layouts
+
+---
+
+## 🚀 Future Improvements
+
+The project can be expanded with:
+
+* Backend integration
+* MySQL/MongoDB database
+* Real user authentication
+* Admin dashboard
+* Real payment gateway
+* Email ticket confirmation
+* QR-code tickets
+* Google Maps integration
+* Event organizer dashboard
+* Real-time ticket availability
+* User profiles
+* Event reviews and ratings
+* Image upload functionality
+* Cloud deployment
+
+---
+
+## 👩‍💻 Project Purpose
+
+EventEdge was developed as a responsive frontend web-development project to demonstrate practical use of:
+
+* HTML5
+* CSS3
+* JavaScript
+* Responsive Web Design
+* DOM Manipulation
+* Form Validation
+* Local Storage
+* Interactive UI Design
+
+---
+
+## 📌 Project Status
+
+**Status:** Completed Frontend Project
+
+**Type:** Event Management & Booking Website
+
+**Technology:** HTML, CSS & JavaScript
+
+**Database:** Local Storage
+
+**Responsive:** Yes
+
+---
+
+## ❤️ Author
+
+Developed as a web development project using **HTML, CSS, and JavaScript**.
+
+---
+
+## 📜 License
+
+This project is created for educational and portfolio purposes.
